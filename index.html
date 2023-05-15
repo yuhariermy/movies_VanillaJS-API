@@ -19,14 +19,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
 
     <!-- Core Custom CSS -->
 
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
+    <!-- ========== Header Section ============== -->
     <header class="header">
       <!-- Logo -->
       <a href="./index.html" class="logo">
@@ -34,8 +34,7 @@
           src="./assets/images/logo.svg"
           width="140"
           height="32"
-          alt="TvFlix Home"
-        />
+          alt="TvFlix Home" />
       </a>
 
       <!-- Search Input -->
@@ -48,15 +47,13 @@
             aria-label="search movies"
             placeholder="Search any movies ... "
             autocomplete="off"
-            search-field
-          />
+            search-field />
           <img
             src="./assets/images/search.png"
             width="24"
             height="24"
             alt="search"
-            class="leading-icon"
-          />
+            class="leading-icon" />
         </div>
 
         <button class="search-btn" search-toggler>
@@ -64,8 +61,7 @@
             src="./assets/images/close.png"
             alt="close search box"
             width="24"
-            height="24"
-          />
+            height="24" />
         </button>
       </div>
 
@@ -75,8 +71,7 @@
           src="./assets/images/search.png"
           alt="open search box"
           width="24"
-          height="24"
-        />
+          height="24" />
       </button>
 
       <button class="menu-btn" menu-btn menu-toggler>
@@ -85,19 +80,71 @@
           alt="open menu"
           class="menu"
           width="24"
-          height="24"
-        />
+          height="24" />
         <img
           src="./assets/images/menu-close.png"
           alt="close menu"
           class="close"
           width="24"
-          height="24"
-        />
+          height="24" />
       </button>
     </header>
+
+    <!-- ========== Side Bar Section ============== -->
+    <nav class="sidebar" sidebar>
+      <div class="sidebar-inner">
+        <div class="sidebar-list">
+          <p class="title">Language</p>
+          <a href="./movie-list.html" class="sidebar-link" menu-close
+            >English</a
+          >
+          <a href="./movie-list.html" class="sidebar-link" menu-close>Hindi</a>
+          <a href="./movie-list.html" class="sidebar-link" menu-close>French</a>
+          <a href="./movie-list.html" class="sidebar-link" menu-close>German</a>
+          <a href="./movie-list.html" class="sidebar-link" menu-close
+            >Spanish</a
+          >
+          <a href="./movie-list.html" class="sidebar-link" menu-close
+            >Chinese</a
+          >
+          <a href="./movie-list.html" class="sidebar-link" menu-close
+            >Bengali</a
+          >
+        </div>
+
+        <div class="sidebar-list">
+          <p class="title">Genre</p>
+          <a href="./movie-list.html" class="sidebar-link" menu-close>Action</a>
+          <a href="./movie-list.html" class="sidebar-link" menu-close>Horror</a>
+          <a href="./movie-list.html" class="sidebar-link" menu-close>Comedy</a>
+          <a href="./movie-list.html" class="sidebar-link" menu-close
+            >Adventure</a
+          >
+          <a href="./movie-list.html" class="sidebar-link" menu-close>Drama</a>
+          <a href="./movie-list.html" class="sidebar-link" menu-close>Sci-fi</a>
+        </div>
+
+        <div class="sidebar-footer">
+          <p class="copyright">Copyright @2023</p>
+          <a
+            href="https://www.youtube.com/channel/UCxqCcI9huKoYEzcaPbbfGjQ"
+            class=""
+            >yuhariermy</a
+          >
+          <img
+            src="./assets/images/tmdb-logo.svg"
+            width="130"
+            height="17"
+            alt="the movie database logo" />
+        </div>
+      </div>
+    </nav>
+    <div class="overlay" overlay menu-toggler></div>
+
+    <!-- ========== Main Section ============== -->
     <main></main>
 
+    <!-- ========== Footer Section ============== -->
     <footer></footer>
 
     <!-- Custom JS Link -->
@@ -106,11 +153,9 @@
     <!-- Ionicons -->
     <script
       type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script
       nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   </body>
 </html>

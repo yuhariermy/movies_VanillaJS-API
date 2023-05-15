@@ -11,9 +11,11 @@ const addEventOnElements = (elements, eventType, callback) => {
 const searchBox = document.querySelector("[search-box]");
 const searchToggler = document.querySelectorAll("[search-toggler]");
 
-function toggleSearch () {
-  searchBox.classList.add("active")
-  document.body.classList.toggle('nav-active');
-}
+// function toggleSearch () {
+//   searchBox.classList.add("active")
+//   document.body.classList.toggle('nav-active');
+// }
 
-addEventOnElements(searchToggler, "click", toggleSearch)
+addEventOnElements(searchToggler, "click", () => {
+  searchBox.classList.toggle("active");
+})
